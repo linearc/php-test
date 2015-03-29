@@ -13,14 +13,14 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
-	/*newly added for theme*/
+	/*newly added for theme */
 		'view' => [
 			'theme' => [
 				'pathMap' => ['@app/views' => '@app/themes/test'],
 				'baseUrl' => '@web/themes/test',
 			],
 		],
-	/*newly added for theme*/
+	/*newly added for theme */
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
