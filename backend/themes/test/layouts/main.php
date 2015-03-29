@@ -21,6 +21,12 @@ AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 <body>
+<script>
+			jQuery(document).ready(function() {
+				Main.init();
+				Index.init();
+			});
+		</script>
     <?php $this->beginBody() ?>
     <div class="wrap">
         <!-- PHP
@@ -52,18 +58,18 @@ AppAsset::register($this);
             -->
 
 
-        <div class="container">
-        <?= Breadcrumbs::widget([
+        <!--<div class="container">
+        Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
+        ]) */?>
         <?= $content ?>
         </div>
     </div>
 
     <footer class="footer">
         <div class="container">
-        <p class="pull-left">&copy; <a href="http://linearcodes.com" target="_blank">Linearcodes</a></span> <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-left">&copy; <a href="http://linearcodes.com" target="_blank">Linearcodes</a></span> </p>
+        <p class="pull-right"></p>
         </div>
     </footer>
 

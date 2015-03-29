@@ -21,21 +21,41 @@ class AppAsset extends AssetBundle
         'css/styles.css',
         'css/plugins.css',
         'css/themes/theme-1.css',
-        'css/themes/theme-2.css',
-        'css/themes/theme-3.css',
-        'css/themes/theme-4.css',
-        'css/themes/theme-5.css',
-        'css/themes/theme-5.css',
+
         'vendor/fontawesome/css/font-awesome.min.css',
+        'vendor/themify-icons/themify-icons.min.css',
         'vendor/fontawesome/fonts/fontawesome-webfont.woff',
         'vendor/fontawesome/fonts/fontawesome-webfont.eot',
         'vendor/fontawesome/fonts/fontawesome-webfont.svg',
         'vendor/fontawesome/fonts/fontawesome-webfont.ttf',
         'vendor/fontawesome/fonts/fontawesome-webfont.woff2',
         'vendor/fontawesome/fonts/FontAwesome.otf',
+
     ];
     public $js = [
         'js/login.js',
+        'js/index.js',
+        'js/main.js',
+        'js/ui-elements.js',
+        'js/ui-treeview.js',
+        'js/form-elements.js',
+        'js/form-validation.js',
+        'js/form-wizard.js',
+
+
+        'vendor/jquery/jquery.min.js',
+		'vendor/bootstrap/js/bootstrap.min.js',
+		'vendor/modernizr/modernizr.js',
+		'vendor/jquery-cookie/jquery.cookie.js',
+		'vendor/perfect-scrollbar/perfect-scrollbar.min.js',
+		'vendor/switchery/switchery.min.js',
+		'vendor/Chart.js/Chart.min.js',
+		'vendor/jquery.sparkline/jquery.sparkline.min.js',
+
+
+
+
+
     ];
     public $depends = [
         'yii\web\YiiAsset',

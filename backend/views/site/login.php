@@ -33,7 +33,8 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <!-- start: LOGIN BOX -->
             <div class="box-login">
-                <form class="form-login" action="index.html">
+                <!--<form class="form-login" action="index.html">-->
+                <?php $form = ActiveForm::begin(['id' => 'login-form','options' => ['class' => 'form-login']]); ?>
                     <fieldset>
                         <legend>
                             Sign in to your account
@@ -43,12 +44,16 @@ $this->params['breadcrumbs'][] = $this->title;
                         </p>
                         <div class="form-group">
 								<span class="input-icon">
-									<input type="text" class="form-control" name="username" placeholder="Username">
+									<!--<input type="text" class="form-control" name="username" placeholder="Username">-->
+                                    <?= Html::activeTextInput($model, 'username', ['placeholder' => 'Username','template' => "\n{input}\n{hint}\n{error}", 'class' => 'form-control']); ?>
+
 									<i class="fa fa-user"></i> </span>
                         </div>
                         <div class="form-group form-actions">
 								<span class="input-icon">
-									<input type="password" class="form-control password" name="password" placeholder="Password">
+									<!--<input type="password" class="form-control password" name="password" placeholder="Password">-->
+
+                                    <?= Html::activeTextInput($model, 'password', ['placeholder' => 'Password','template' => "\n{input}\n{hint}\n{error}", 'class' => 'form-control']); ?>
 									<i class="fa fa-lock"></i>
 									<a class="forgot" href="login_forgot.html">
                                         I forgot my password
